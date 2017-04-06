@@ -12,4 +12,12 @@ URL是URI的子集。
 #### URL模块
 [中文文档](http://nodejs.cn/api/url.html)
 [英文文档](https://nodejs.org/dist/latest-v6.x/docs/api/url.html)
-
+#### URL对象的方法
+- url.format(urlObject):返回一个从urlObject格式化后的url字符串。
+- url.parse(urlString[, parseQueryString[, slashesDenoteHOst]])):解析一个url
+字符串并返回一个url对象。根据parseQueryString的不同可将url中的query参数串
+转换为未解析、未解码的字符串或是生成一个对象。
+- url.resolve(from,to):会以一种Web浏览器解析超链接的方式把一个目标URL
+解析成相对于一个基础URL。把两个参数合称为浏览器可以接收的格式(有替换)。
+#### 使用方法
+见03-url文件夹。
